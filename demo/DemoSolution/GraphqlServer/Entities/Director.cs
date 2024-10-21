@@ -1,4 +1,6 @@
-﻿namespace GraphqlServer.Entities;
+﻿using GraphqlServer.Repositories;
+
+namespace GraphqlServer.Entities;
 
 public class Director
 {
@@ -7,4 +9,9 @@ public class Director
     public string Name { get; set; }
 
     public DateOnly DateOfBirth { get; set; }
+
+    public async Task<Movie?> BestMovie([Service] MovieRepository movieRepo)
+    {
+        return await movieRepo.GetById(18);
+    }
 }

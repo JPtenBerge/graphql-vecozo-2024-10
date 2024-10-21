@@ -23,6 +23,7 @@ public class Query
 
     public string FilterMovie(FilterMovieInputType input)
     {
+        
         return $"filteren met: {input.DirectorName} / {input.ReleaseYear}";
     }
 
@@ -32,7 +33,8 @@ public class Query
         return new()
         {
             Title = "Titanic",
-            ReleaseYear = 1997
+            ReleaseYear = 1997,
+            DirectorId = 4
         };
     }
 }

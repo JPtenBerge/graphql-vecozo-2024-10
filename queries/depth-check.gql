@@ -1,0 +1,266 @@
+query {
+  bestMovie {
+    title
+    director {
+      name
+      bestMovie {
+        title
+        director {
+          name
+          bestMovie {
+            title
+            director {
+              name
+              bestMovie {
+                title
+                director {
+                  name
+                  bestMovie {
+                    title
+                    director {
+                      name
+                      bestMovie {
+                        title
+                        director {
+                          name
+                          bestMovie {
+                            title
+                            director {
+                              name
+                              bestMovie {
+                                title
+                                director {
+                                  name
+                                  bestMovie {
+                                    title
+                                    director {
+                                      name
+                                      bestMovie {
+                                        title
+                                        director {
+                                          name
+                                          bestMovie {
+                                            title
+                                            director {
+                                              name
+                                              bestMovie {
+                                                title
+                                                director {
+                                                  name
+                                                  bestMovie {
+                                                    title
+                                                    director {
+                                                      name
+                                                      bestMovie {
+                                                        title
+                                                        director {
+                                                          name
+                                                          bestMovie {
+                                                            title
+                                                            director {
+                                                              name
+                                                              bestMovie {
+                                                                title
+                                                                director {
+                                                                  name
+                                                                  bestMovie {
+                                                                    title
+                                                                    director {
+                                                                      name
+                                                                      bestMovie {
+                                                                        title
+                                                                        director {
+                                                                          name
+                                                                          bestMovie {
+                                                                            title
+                                                                            director {
+                                                                              name
+                                                                              bestMovie {
+                                                                                title
+                                                                                director {
+                                                                                  name
+                                                                                  bestMovie {
+                                                                                    title
+                                                                                    director {
+                                                                                      name
+                                                                                      bestMovie {
+                                                                                        title
+                                                                                        director {
+                                                                                          name
+                                                                                          bestMovie {
+                                                                                            title
+                                                                                            director {
+                                                                                              name
+                                                                                              bestMovie {
+                                                                                                title
+                                                                                                director {
+                                                                                                  name
+                                                                                                  bestMovie {
+                                                                                                    title
+                                                                                                    director {
+                                                                                                      name
+                                                                                                      bestMovie {
+                                                                                                        title
+                                                                                                        director {
+                                                                                                          name
+                                                                                                          bestMovie {
+                                                                                                            title
+                                                                                                            director {
+                                                                                                              name
+                                                                                                              bestMovie {
+                                                                                                                title
+                                                                                                                director {
+                                                                                                                  name
+                                                                                                                  bestMovie {
+                                                                                                                    title
+                                                                                                                    director {
+                                                                                                                      name
+                                                                                                                      bestMovie {
+                                                                                                                        title
+                                                                                                                        director {
+                                                                                                                          name
+                                                                                                                          bestMovie {
+                                                                                                                            title
+                                                                                                                            director {
+                                                                                                                              name
+                                                                                                                              bestMovie {
+                                                                                                                                title
+                                                                                                                                director {
+                                                                                                                                  name
+                                                                                                                                  bestMovie {
+                                                                                                                                    title
+                                                                                                                                    director {
+                                                                                                                                      name
+                                                                                                                                      bestMovie {
+                                                                                                                                        title
+                                                                                                                                        director {
+                                                                                                                                          name
+                                                                                                                                          bestMovie {
+                                                                                                                                            title
+                                                                                                                                            director {
+                                                                                                                                              name
+                                                                                                                                              bestMovie {
+                                                                                                                                                title
+                                                                                                                                                director {
+                                                                                                                                                  name
+                                                                                                                                                  bestMovie {
+                                                                                                                                                    title
+                                                                                                                                                    director {
+                                                                                                                                                      name
+                                                                                                                                                      bestMovie {
+                                                                                                                                                        title
+                                                                                                                                                        director {
+                                                                                                                                                          name
+                                                                                                                                                          bestMovie {
+                                                                                                                                                            title
+                                                                                                                                                            director {
+                                                                                                                                                              name
+                                                                                                                                                              bestMovie {
+                                                                                                                                                                title
+                                                                                                                                                                director {
+                                                                                                                                                                  name
+                                                                                                                                                                  bestMovie {
+                                                                                                                                                                    title
+                                                                                                                                                                    director {
+                                                                                                                                                                      name
+                                                                                                                                                                      bestMovie {
+                                                                                                                                                                        title
+                                                                                                                                                                        director {
+                                                                                                                                                                          name
+                                                                                                                                                                          bestMovie {
+                                                                                                                                                                            title
+                                                                                                                                                                            director {
+                                                                                                                                                                              name
+                                                                                                                                                                              bestMovie {
+                                                                                                                                                                                title
+                                                                                                                                                                                director {
+                                                                                                                                                                                  name
+                                                                                                                                                                                }
+                                                                                                                                                                              }
+                                                                                                                                                                            }
+                                                                                                                                                                          }
+                                                                                                                                                                        }
+                                                                                                                                                                      }
+                                                                                                                                                                    }
+                                                                                                                                                                  }
+                                                                                                                                                                }
+                                                                                                                                                              }
+                                                                                                                                                            }
+                                                                                                                                                          }
+                                                                                                                                                        }
+                                                                                                                                                      }
+                                                                                                                                                    }
+                                                                                                                                                  }
+                                                                                                                                                }
+                                                                                                                                              }
+                                                                                                                                            }
+                                                                                                                                          }
+                                                                                                                                        }
+                                                                                                                                      }
+                                                                                                                                    }
+                                                                                                                                  }
+                                                                                                                                }
+                                                                                                                              }
+                                                                                                                            }
+                                                                                                                          }
+                                                                                                                        }
+                                                                                                                      }
+                                                                                                                    }
+                                                                                                                  }
+                                                                                                                }
+                                                                                                              }
+                                                                                                            }
+                                                                                                          }
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
