@@ -9,7 +9,8 @@ builder.Services
     {
         options.IncludeExceptionDetails = builder.Environment.IsDevelopment();
     })
-    .AddQueryType<Query>();
+    .AddQueryType<Query>()
+    .AddMutationType<Mutation>();
 
 builder.Services.AddTransient<MovieRepository>();
 builder.Services.AddTransient<DirectorRepository>();

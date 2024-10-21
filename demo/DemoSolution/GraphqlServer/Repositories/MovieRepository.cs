@@ -67,4 +67,12 @@ public class MovieRepository
     {
         return s_movies.SingleOrDefault(x => x.Id == id);
     }
+
+    public Movie Add(string title, int releaseYear, int directorId)
+    {
+        var newMovie = new Movie() { DirectorId = directorId, Title = title, ReleaseYear = releaseYear };
+        newMovie.Id = s_movies.Max(x => x.Id) + 1;
+        s_movies.Add(newMovie);
+        return newMovie;
+    }
 }

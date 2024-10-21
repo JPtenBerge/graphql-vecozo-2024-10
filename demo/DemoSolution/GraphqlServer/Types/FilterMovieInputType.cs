@@ -1,6 +1,6 @@
 ﻿namespace GraphqlServer.Types;
 
-public class FilterMovieInputType
+public class FilterMovieInput
 {
     public string? DirectorName { get; set; }
 
