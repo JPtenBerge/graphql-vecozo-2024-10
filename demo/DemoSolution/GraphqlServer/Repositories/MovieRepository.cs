@@ -9,23 +9,26 @@ public class MovieRepository
         new()
         {
             Title = "Titanic",
-            ReleaseYear = 1997
+            ReleaseYear = 1997,
+            DirectorId = 4
         },
         new()
         {
             Title = "Kung-fu Panda 4: This time it's personal",
-            ReleaseYear = 2025
+            ReleaseYear = 2025,
+            DirectorId = 8
         },
         new()
         {
             Title = "Oppenheimer",
-            ReleaseYear = 2023
+            ReleaseYear = 2023,
+            DirectorId = 15
         }
     };
 
     public async Task<IEnumerable<Movie>> GetAll()
     {
         await Task.Delay(2000);
-        return null;
+        return s_movies;
     }
 }
