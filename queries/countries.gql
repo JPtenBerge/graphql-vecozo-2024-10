@@ -1,0 +1,18 @@
+query {
+  a: country(code: "NL") {
+    name
+    capital
+  }
+  b: country(code: "BE") {
+    ...countryDingen
+  }
+  countries(filter: { name: { regex: "ica$" } }) {
+    ...countryDingen
+  }
+}
+
+fragment countryDingen on Country {
+  name
+  capital
+  currency
+}
