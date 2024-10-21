@@ -1,6 +1,5 @@
 using GraphqlServer;
 using GraphqlServer.Repositories;
-using HotChocolate;
 
 var builder = WebApplication.CreateBuilder(args);
 
