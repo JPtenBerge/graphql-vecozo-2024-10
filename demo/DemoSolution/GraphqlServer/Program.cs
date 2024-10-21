@@ -1,4 +1,5 @@
 using GraphqlServer;
+using GraphqlServer.Repositories;
 using HotChocolate;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,6 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services
     .AddGraphQLServer()
     .AddQueryType<Query>();
+
+builder.Services.AddTransient<MovieRepository>();
 
 var app = builder.Build();
 
