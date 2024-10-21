@@ -1,0 +1,15 @@
+query {
+  helloWorld
+  bestMovie {
+    title
+    releaseYear
+  }
+  movies {
+    title
+    releaseYear
+    director {
+      name
+      dateOfBirth
+    }
+  }
+}
