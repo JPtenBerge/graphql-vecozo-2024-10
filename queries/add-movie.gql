@@ -1,0 +1,21 @@
+mutation ($addMovieInput: AddMovieInput!) {
+  addMovie(input: $addMovieInput) {
+    id
+    title
+    releaseYear
+    director {
+      name
+      dateOfBirth
+    }
+  }
+}
+
+met variables:
+
+{
+  "addMovieInput": {
+    "title": "Mijn nieuwe movie",
+    "releaseYear": 2084,
+    "directorId": 15
+  }
+}

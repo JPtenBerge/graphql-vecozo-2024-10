@@ -1,0 +1,33 @@
+﻿schema {
+  query: Query
+}
+
+type Director {
+  bestMovie: Movie
+  id: Int!
+  name: String!
+  dateOfBirth: Date!
+}
+
+type Movie {
+  director: Director!
+  id: Int!
+  title: String!
+  releaseYear: Int!
+}
+
+type Query {
+  helloWorld: String!
+  movies: [Movie!]
+  movieById(id: Int!): Movie
+  filterMovie(input: FilterMovieInput!): String!
+  bestMovie: Movie
+}
+
+input FilterMovieInput {
+  directorName: String
+  releaseYear: Int
+}
+
+"The `Date` scalar represents an ISO-8601 compliant date type."
+scalar Date

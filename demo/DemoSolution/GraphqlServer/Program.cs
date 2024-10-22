@@ -12,7 +12,7 @@ builder.Services
     .AddQueryType<Query>()
     .AddMutationType<Mutation>();
 
-builder.Services.AddTransient<MovieRepository>();
+builder.Services.AddTransient<IMovieRepository, MovieRepository>();
 builder.Services.AddTransient<DirectorRepository>();
 
 var app = builder.Build();

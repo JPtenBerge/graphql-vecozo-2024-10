@@ -3,7 +3,7 @@ using System.Numerics;
 
 namespace GraphqlServer.Repositories;
 
-public class MovieRepository
+public class MovieRepository : IMovieRepository
 {
     private static List<Movie> s_movies = new()
     {
