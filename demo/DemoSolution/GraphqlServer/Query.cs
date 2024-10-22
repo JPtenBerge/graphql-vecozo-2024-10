@@ -1,6 +1,8 @@
 ﻿using GraphqlServer.Entities;
 using GraphqlServer.Repositories;
 using GraphqlServer.Types;
+using HotChocolate.Authorization;
+using System.Security.Claims;
 
 namespace GraphqlServer;
 
@@ -11,6 +13,14 @@ public class Query
         return "whoa! Hello world";
     }
 
+    [Authorize]
+    [Obsolete]
+    public string Me(ClaimsPrincipal claims)
+    {
+        return $"Ik ben 2 {claims.Identity.Name}";
+    }
+
+    [UsePaging]
     public async Task<IEnumerable<Movie>?> Movies(IMovieRepository movieRepository)
     {
         return await movieRepository.GetAll();

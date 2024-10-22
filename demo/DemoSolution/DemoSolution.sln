@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphqlServer", "GraphqlServer\GraphqlServer.csproj", "{A0DE5F7B-B46A-4350-9B62-BA461BDFCE6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraphqlServer", "GraphqlServer\GraphqlServer.csproj", "{A0DE5F7B-B46A-4350-9B62-BA461BDFCE6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Temp", "Temp\Temp.csproj", "{2E6774E9-C106-4B52-881A-C3AA26C195E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Temp", "Temp\Temp.csproj", "{2E6774E9-C106-4B52-881A-C3AA26C195E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphqlServer.Tests", "GraphqlServer.Tests\GraphqlServer.Tests.csproj", "{C9332029-B5FA-4AE2-9F89-8159064D13B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraphqlServer.Tests", "GraphqlServer.Tests\GraphqlServer.Tests.csproj", "{C9332029-B5FA-4AE2-9F89-8159064D13B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphClient", "GraphClient\GraphClient.csproj", "{BB594B60-7CF9-44F2-A520-A0AA64476583}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraphClient", "GraphClient\GraphClient.csproj", "{BB594B60-7CF9-44F2-A520-A0AA64476583}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{A8BE1E08-4899-4245-8EE6-44BE28F6279B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{BB594B60-7CF9-44F2-A520-A0AA64476583}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB594B60-7CF9-44F2-A520-A0AA64476583}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB594B60-7CF9-44F2-A520-A0AA64476583}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8BE1E08-4899-4245-8EE6-44BE28F6279B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8BE1E08-4899-4245-8EE6-44BE28F6279B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8BE1E08-4899-4245-8EE6-44BE28F6279B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8BE1E08-4899-4245-8EE6-44BE28F6279B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
