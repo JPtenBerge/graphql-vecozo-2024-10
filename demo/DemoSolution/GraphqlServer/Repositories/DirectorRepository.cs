@@ -1,4 +1,5 @@
 ﻿using GraphqlServer.Entities;
+using System.IO;
 
 namespace GraphqlServer.Repositories;
 
@@ -34,6 +35,13 @@ public class DirectorRepository
 
     public Director? GetById(int id)
     {
+        Console.WriteLine("[DirectorRepo] director ophalen voor id " + id);
         return s_directors.Find(x => x.Id == id);
+    }
+
+    public Task<IEnumerable<Director>> GetByIds(IReadOnlyList<int> ids)
+    {
+        Console.WriteLine("[DirectorRepo] directors ophalen voor ids " + string.Join(", ", ids));
+        return Task.FromResult(s_directors.Where(x => ids.Contains(x.Id)));
     }
 }

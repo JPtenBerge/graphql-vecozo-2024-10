@@ -18,6 +18,7 @@ public class Query
 
     public async Task<Movie?> GetMovieById(int id, IMovieRepository movieRepository)
     {
+        Console.WriteLine("[query] GetMovieById " + id);
         return await movieRepository.GetById(id);
     }
 

@@ -1,4 +1,5 @@
-﻿using GraphqlServer.Repositories;
+﻿using GraphqlServer.DataLoaders;
+using GraphqlServer.Repositories;
 using GraphqlServer.Types;
 
 namespace GraphqlServer.Entities;
@@ -16,8 +17,9 @@ public class Movie : IWatchable, IOffering
     [GraphQLIgnore]
     public int DirectorId { get; set; }
 
-    public Director Director([Service] DirectorRepository directorRepo)
+    public async Task<Director> Director(DirectorDataLoader directorDataLoader)
     {
-        return directorRepo.GetById(DirectorId);
+        Console.WriteLine("[movie] director ophalen voor id " + DirectorId);
+        return await directorDataLoader.LoadRequiredAsync(DirectorId);
     }
 }
