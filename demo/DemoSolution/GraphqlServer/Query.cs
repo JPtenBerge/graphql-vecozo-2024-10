@@ -21,6 +21,11 @@ public class Query
         return await movieRepository.GetById(id);
     }
 
+    public IEnumerable<Movie> GetMoviesByGenre(Genre genre, IMovieRepository movieRepository)
+    {
+        return movieRepository.GetByGenre(genre);
+    }
+
     public string FilterMovie(FilterMovieInput input)
     {
         
