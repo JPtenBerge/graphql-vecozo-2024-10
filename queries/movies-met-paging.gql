@@ -1,0 +1,30 @@
+query {
+  movies(first: 6) {
+
+    pageInfo {
+      hasNextPage
+      hasPreviousPage
+      startCursor
+      endCursor
+    }
+    nodes {
+      title
+    }
+  }
+}
+
+query {
+  movies(after: "Mg==", first: 3) {
+    pageInfo {
+      hasNextPage
+      hasPreviousPage
+      startCursor
+      endCursor
+    }
+    nodes {
+      title
+    }
+  }
+}
+
+"Mg==" was hier de endCursor
