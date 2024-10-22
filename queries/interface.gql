@@ -1,0 +1,16 @@
+query {
+  watchables {
+    id
+    title
+    genre
+
+    ... on Movie {
+      director {
+        name
+      }
+    }
+    ... on Show {
+      nrOfEpisodes
+    }
+  }
+}

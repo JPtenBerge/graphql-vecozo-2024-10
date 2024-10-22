@@ -1,4 +1,5 @@
 using GraphqlServer;
+using GraphqlServer.Entities;
 using GraphqlServer.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,10 +16,15 @@ builder.Services
         options.IncludeExceptionDetails = builder.Environment.IsDevelopment();
     })
     .AddQueryType<Query>()
-    .AddMutationType<Mutation>();
+    .AddMutationType<Mutation>()
+    .AddType<IWatchable>()
+    .AddType<MovieError>()
+    .AddType<Show>()
+    .AddType<Movie>();
 
 builder.Services.AddTransient<IMovieRepository, MovieRepository>();
 builder.Services.AddTransient<DirectorRepository>();
+builder.Services.AddTransient<ShowRepository>();
 
 var app = builder.Build();
 

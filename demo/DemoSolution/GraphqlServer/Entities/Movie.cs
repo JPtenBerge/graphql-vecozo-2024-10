@@ -3,7 +3,7 @@ using GraphqlServer.Types;
 
 namespace GraphqlServer.Entities;
 
-public class Movie
+public class Movie : IWatchable, IOffering
 {
     public int Id { get; set; }
 
