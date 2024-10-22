@@ -2,6 +2,20 @@
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
-
-Welcome to your new app.
+<UseGetMovies Context="result">
+    <ChildContent>
+        <ul>
+            @foreach (var item in result.Movies!)
+            {
+                <li>@item.Title kwam in @item.ReleaseYear uit</li>
+            }
+        </ul>
+    </ChildContent>
+    <ErrorContent>
+        Something went wrong ...<br />
+        @result.First().Message
+    </ErrorContent>
+    <LoadingContent>
+        Loading ...
+    </LoadingContent>
+</UseGetMovies>

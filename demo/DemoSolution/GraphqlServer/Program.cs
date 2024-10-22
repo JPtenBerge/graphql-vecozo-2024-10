@@ -3,6 +3,11 @@ using GraphqlServer.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("blazorfrontend", policy => policy.WithOrigins("https://localhost:7163").AllowCredentials().AllowAnyMethod().AllowAnyHeader());
+});
+
 builder.Services
     .AddGraphQLServer()
     .ModifyRequestOptions(options =>
@@ -18,6 +23,8 @@ builder.Services.AddTransient<DirectorRepository>();
 var app = builder.Build();
 
 app.UseHttpsRedirection();
+
+app.UseCors("blazorfrontend");
 
 app.MapGraphQL();
 

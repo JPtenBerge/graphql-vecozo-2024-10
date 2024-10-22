@@ -1,0 +1,47 @@
+schema {
+  query: Query
+  mutation: Mutation
+}
+
+type Query {
+  helloWorld: String!
+  movies: [Movie!]
+  movieById(id: Int!): Movie
+  filterMovie(input: FilterMovieInput!): String!
+  bestMovie: Movie
+}
+
+type Mutation {
+  addMovie(input: AddMovieInput!): Movie!
+}
+
+input AddMovieInput {
+  title: String!
+  releaseYear: Int!
+  directorId: Int!
+}
+
+input FilterMovieInput {
+  directorName: String
+  releaseYear: Int
+}
+
+type Movie {
+  director: Director!
+  id: Int!
+  title: String!
+  releaseYear: Int!
+}
+
+type Director {
+  bestMovie: Movie
+  id: Int!
+  name: String!
+  dateOfBirth: Date!
+}
+
+"The `Date` scalar represents an ISO-8601 compliant date type."
+scalar Date
+
+"The purpose of the `cost` directive is to define a `weight` for GraphQL types, fields, and arguments. Static analysis can use these weights when calculating the overall cost of a query or response."
+directive @cost("The `weight` argument defines what value to add to the overall cost for every appearance, or possible appearance, of a type, field, argument, etc." weight: String!) on SCALAR | OBJECT | FIELD_DEFINITION | ARGUMENT_DEFINITION | ENUM | INPUT_FIELD_DEFINITION
